@@ -1,16 +1,13 @@
 import React from "react";
-import { TodoContext } from "../../TodoConstext";
 
 import './styles/index.css'
 
-function CreateTodoButton() {
+function CreateTodoButton({addTodo}) {
   const [newTodoValue, setNewTodoValue] = React.useState('')
 
   const onWrite = (e) => {
     setNewTodoValue(e.target.value)
   }
-
-  const { addTodo } = React.useContext(TodoContext)
 
   const createTask = (e) => {
     e.preventDefault()

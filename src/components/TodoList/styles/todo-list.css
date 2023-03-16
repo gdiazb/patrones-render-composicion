@@ -11,16 +11,3 @@
   padding-bottom: 30px;
 
 }
-
-.todo__list-wrapper:before {
-  content: '';
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  z-index: 1;
-  background: rgb(240,248,255);
-  background: linear-gradient(0deg, rgba(240,248,255,1) 0%, rgba(240,248,255,1) 65%, rgba(0,212,255,0) 100%);
-}
